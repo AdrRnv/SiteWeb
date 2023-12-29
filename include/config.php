@@ -1,6 +1,6 @@
 <?php
-define("NUM_TEL","06 60 44 32 72");
-define("ADDR_MAIL","cabanne23@gmail.com");
+define("NUM_TEL","06 00 00 00 00");
+define("ADDR_MAIL","adrian.rabian@gmail.com");
 define("ADDR_POST","01000");
 
 function formatVerif($imagePath){

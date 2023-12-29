@@ -1,7 +1,3 @@
-<?php include '/include/config.php' ?>
-
-
-
 <div class="three">
   <div class="adivse">
       <p><strong> A propos </strong></p>

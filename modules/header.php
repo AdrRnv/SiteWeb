@@ -1,4 +1,3 @@
-<?php session_start(); ?>
     <nav>
         <input id="menu__toggle" type="checkbox" >
         <label class="menu__btn" for="menu__toggle">
@@ -10,6 +9,7 @@
                 if (isset($_SESSION['admin']) && $_SESSION['admin'] === true) {
                     echo '<li><a href="deco.php" class="nom" >Déconnexion</a></li>';
                     echo '<li><a class="nom" >Bienvenue ' . $_SESSION['user_name'] . '</a></li>';
+                    echo '<li><a href="/addArt.php" class="nom > +Article</a></li>';
                 } else {
                     echo '<li><a href="login.php" class="nom" >Connexion</a></li>';
                 }
@@ -27,8 +27,6 @@
             class="nom <?= (basename($_SERVER['REQUEST_URI']) == "AbonnezVous.php") ? ' active' : ''; ?>">Abonnez-vous</a></li>
             <li><a href="/statistiques.php" 
             class="nom <?= (basename($_SERVER['REQUEST_URI']) == "statistiques.php") ? ' active' : ''; ?>">Statistiques</a></li>
-            <li><a href="/addArt.php" 
-            class="nom <?= (basename($_SERVER['REQUEST_URI']) == "addArt.php") ? ' active' : ''; ?>">+Article</a></li>
             <li class="dropdown">
                 <a href="/blog.php" class="nom <?= (basename($_SERVER['REQUEST_URI']) == "blog.php") ? ' active' : ''; ?>">Blog</a>
                 <ul>
